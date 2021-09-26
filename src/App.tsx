@@ -1,21 +1,13 @@
-import React from 'react';
+import { GlobalStyle } from "./styles/global";
 
 export function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello React!</h1>
+      <GlobalStyle />
+
+      <button disabled >Cuba</button>
+      <input type="text" placeholder="Me dicen cuba..." />
     </div>
   );
 }
