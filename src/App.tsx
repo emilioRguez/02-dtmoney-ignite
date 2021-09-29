@@ -1,13 +1,11 @@
+import { Header } from "./components/Header";
 import { GlobalStyle } from "./styles/global";
 
 export function App() {
   return (
-    <div className="App">
-      <h1>Hello React!</h1>
+    <>
+      <Header />
       <GlobalStyle />
-
-      <button disabled >Cuba</button>
-      <input type="text" placeholder="Me dicen cuba..." />
-    </div>
+    </>
   );
 }
