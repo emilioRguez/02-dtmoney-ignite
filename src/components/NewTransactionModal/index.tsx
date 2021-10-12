@@ -14,7 +14,7 @@ interface NewTransactionModalProps {
 
 export function NewTransactionModal( { isOpen, onRequestClose }: NewTransactionModalProps ) {
   const [title, setTitle] = useState('')
-  const [price, setPrice] = useState(0)
+  const [amount, setAmount] = useState(0)
   const [category, setCategory] = useState('')
   const [type, setType] = useState('deposit')
 
@@ -23,7 +23,7 @@ export function NewTransactionModal( { isOpen, onRequestClose }: NewTransactionM
 
     const data = {
       title,
-      price,
+      amount,
       category,
       type
     }
@@ -55,9 +55,9 @@ export function NewTransactionModal( { isOpen, onRequestClose }: NewTransactionM
           
           <input 
             type="number" 
-            placeholder="Price"
-            value={price}
-            onChange={event => setPrice(Number(event.target.value))}
+            placeholder="Amount"
+            value={amount}
+            onChange={event => setAmount(Number(event.target.value))}
           />
 
           <TransactionTypeContainer>
